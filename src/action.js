@@ -87,10 +87,10 @@ const main = async () => {
 
   const octokit = github.getOctokit(GITHUB_TOKEN);
 
-  const OWNER = "ashuvssut";
-  const REPO = "ashuvssut-resume";
-  const BRANCH = "download";
-  const PDF_PATH = "Resume _ Ashutosh Khanduala.pdf";
+  const OWNER = "matthubble";
+  const REPO = "resume";
+  const BRANCH = "gh-pages";
+  const PDF_PATH = "MattHubbleResume.pdf";
   const pdfBase64 = await getPdfBase64();
   await uploadToRepo(octokit, PDF_PATH, pdfBase64, OWNER, REPO, BRANCH);
 };
