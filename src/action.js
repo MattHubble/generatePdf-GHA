@@ -15,7 +15,7 @@ const getFileSha = async (octokit, pdfPath, owner, repo, branch = "main") => {
 };
 
 const getPdfBase64 = async () => {
-  const URL = "https://ashuvssut.github.io/ashuvssut-resume/";
+  const URL = "https://resume.hbbl.info/";
   const domSelector = "#resume-wrap";
   const browserFetcher = puppeteer.createBrowserFetcher();
   let revisionInfo = await browserFetcher.download("884014");
